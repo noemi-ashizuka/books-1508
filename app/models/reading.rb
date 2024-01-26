@@ -1,3 +1,4 @@
 class Reading < ActiveRecord::Base
-  # TODO
+  belongs_to :book
+  belongs_to :user
 end

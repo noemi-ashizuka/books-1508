@@ -1,8 +1,11 @@
 Q1 - What is a relational database?
 
-
+it is a structure with tables, with rows and columns, can be connected to each other using primary_key and foreign_key.
 
 Q2 - What are the different 'table relationships?'
+1:1 (one to one) rarely used
+1:N (one to many)
+N:N (many to many)
 
 
 Q3 - Consider this e-library service. An author, defined by his name have several books. A book, defined by its title and publishing year, has one author only. What's this simple database scheme. Please draw it!
@@ -15,7 +18,7 @@ Q4 - A user, defined by his email, can read several books. A book (e-book!!) can
 
 Q5 - What's the language to make queries to a database?
 
-
+SQL - Structured Query Language
 Q6 - What's the simple query to get books written before 1985?
 
 
@@ -24,14 +27,18 @@ Q7 - What's the simple query to get the 3 most recent books written by Jules Ver
 
 
 Q8 - What's the purpose of ActiveRecord?
-
+Ar writes SQL queries and interacts with the DB in our ruby apps.
+tables => model
+column => instance variables
+record => instance
 
 
 Q9 - What's a migration?
-
+a file to make a change to our db schema
 
 
    - How do you run a migration?
+   rake db:migrate
       
 Q10 - Complete migrations to create your e-library database
 
@@ -49,6 +56,6 @@ Q13 - Complete the following code using the relevant ActiveRecord methods.
 
 -- see active_record_methods.rb
 
-Q14 - Add validations of your choice to the Author class. Can we save an object in DB if its validations do not pass? 
+Q14 - Add validations of your choice to the Author class. Can we save an object in DB if its validations do not pass? NO
 
 -- see author.rb
