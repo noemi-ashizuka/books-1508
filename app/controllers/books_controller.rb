@@ -5,7 +5,10 @@ def BooksController
   end
 
   def three_recent_jules
-   query = "SELECT * FROM books JOIN authors ON authors.id = books.author_id 
-   WHERE  authors.name = 'Jules Verne' ORDER BY year DESC LIMIT 3"
+   query = "SELECT * FROM books 
+            JOIN authors ON authors.id = books.author_id 
+            WHERE  authors.name = 'Jules Verne' 
+            ORDER BY year 
+            DESC LIMIT 3"
   end
 end

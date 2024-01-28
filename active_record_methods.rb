@@ -2,6 +2,8 @@
 fav_author = Author.new(name: 'Garth Nix')
 fav_author.save
 
+# OR Author.create(name: 'Garth Nix')
+
 #2. Get all authors
 Author.all
 
